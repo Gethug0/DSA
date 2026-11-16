@@ -1,1 +1,78 @@
+VARIABLES AND DATA TYPES:
+name = "Stella"
+age = 20
+height = 160
+salary = 25000
+print(name)
+print(age)
+print(height)
+print(salary)
 
+age = 20
+year = 2026
+marks = 85
+print(age)
+print(type(age))
+
+ARITHMETIC OPERATORS :
+a = 10
+b = 5
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Floor Division:", a // b)
+print("Modulus:", a % b)
+print("Exponentiation:", a ** b)
+
+INCREMENT AND DECREMENT OPERATORS:
+a = 10
+a += 1
+print(a)
+
+a = 10
+a -= 1
+print(a)
+
+CONDITIONAL STATEMENT:
+(A)NESTED 
+age = 20
+citizen = True
+
+if age >= 18:
+    if citizen == True:
+        print("Eligible to vote")
+    else:
+        print("Citizenship required")
+else:
+    print("Age requirement not met")
+
+(B)IF-ELIF-ELSE Statement:
+marks = 85
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 50:
+    print("Grade C")
+else:
+    print("Fail")
+
+(C)IF ELSE STATEMENT:
+age = 16
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+
+LOOPING STATEMENT:
+(A)FOR LOOP
+for i in range(1, 6):
+    print(i)
+
+(B)WHILE LOOP 
+for i in range(1, 6):
+    print(i)
