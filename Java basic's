@@ -1,0 +1,236 @@
+Basic structure of a Java program
+  class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+Code	                       Meaning
+class Main	                 Creates a class named Main
+public	                     Accessible from anywhere
+static	                     Can run without creating an object
+void	                       Does not return a value
+main()	                     Starting point of the program
+String[] args	               Receives command-line arguments
+System.out.println()	       Prints something on the screen
+
+  Output:
+  Hello World
+
+  Data types in Java:
+Data type	             Used for	                   Example
+byte	              Small whole numbers	         byte a = 10;
+short	              Whole numbers	               short a = 100;
+int	                Integer numbers	             int a = 1000;
+float	              Decimal numbers	             float a = 10.5f;
+double	            More precise decimals	       double a = 10.55;
+long	              Large whole numbers	         long a = 123456L;
+char	              Single character	           char a = 'A';
+String	            Text	String                 a = "Hello";
+boolean	            True or false	               boolean a = true;
+
+Operators in Java:
+int a = 10;
+int b = 5;
+
+System.out.println(a + b);
+System.out.println(a - b);
+System.out.println(a * b);
+System.out.println(a / b);
+System.out.println(a % b);
+
+  output:
+15
+5
+50
+2
+0
+
+Increment and decrement operators:
+A. Pre-increment (++a)
+int a = 10;
+System.out.println(++a);
+  output
+  11
+
+B. Post-increment (a++)
+int a = 10;
+System.out.println(a++);
+System.out.println(a);
+  output:
+  10
+  11
+
+Operator	    Meaning
+++a         	Pre-increment
+a++         	Post-increment
+--a          	Pre-decrement
+a--	          Post-decrement
+
+Taking input from the user – Scanner:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();
+
+        System.out.println(num);
+    }
+}
+//new scanner example
+Scanner sc = new Scanner(System.in);
+
+String name = sc.next();
+int age = sc.nextInt();
+double mark = sc.nextDouble();
+
+If-else statement – Age eligibility program:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter age:");
+        int age = sc.nextInt();
+
+        if (age >= 18) {
+            System.out.println("Eligible to vote");
+        } else {
+            System.out.println("Not eligible to vote");
+        }
+    }
+}
+
+  Enter age:
+  20
+output'
+    Eligible to vote
+
+Symbol	 Meaning
+>	       Greater than
+<	       Less than
+>=	     Greater than or equal to
+<=	     Less than or equal to
+==	     Equal to
+!=	     Not equal to  
+
+Finding the largest of three numbers:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        if (a >= b && a >= c) {
+            System.out.println("A is largest");
+        }
+        else if (b >= a && b >= c) {
+            System.out.println("B is largest");
+        }
+        else {
+            System.out.println("C is largest");
+        }
+    }
+}
+
+input
+10
+25
+15
+
+Output:
+B is largest
+
+What is &&?
+  a > b && a > c
+
+Even and odd number program:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+
+        if (num % 2 == 0) {
+            System.out.println("Even number");
+        } else {
+            System.out.println("Odd number");
+        }
+    }
+}
+
+Example:
+Input	 Remainder	Output
+23	   1	        Odd
+24   	 0	        Even
+32	   0	        Even
+
+Switch statement – Days of the week:
+0 = Sunday
+1 = Monday
+2 = Tuesday
+3 = Wednesday
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int day = sc.nextInt();
+        switch (day) {
+            case 0:
+                System.out.println("Sunday");
+                break;
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            default:
+                System.out.println("Invalid input");
+        }
+    }
+}
+
+Input:
+2
+  Output:
+  Tuesday
+What is break?
+It stops execution from continuing into the next case.
+What is default?
+It runs when none of the cases match.
+
+Term	     Simple meaning
+Class	     Blueprint for creating objects
+Object	   Instance of a class
+Method	   A block of code that performs a task
+Variable	 A named storage location
+Package	   Groups related Java classes
+Comments	 Notes written inside code for humans
+
+  
+Types of comments
+Single-line comment:
+    // This is a comment
+Multi-line comment:
+    /*
+   This is a
+   multi-line comment
+   */
+    
