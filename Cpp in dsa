@@ -1,0 +1,115 @@
+Basic program in cpp:
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+// This program prints Hello world!!
+int main() {
+    std::cout << "Hello world!!" << std::endl;
+    return 0;
+}
+
+include<math.h>:
+
+#include <iostream>
+#include <math.h>
+
+int main() {
+    std::cout << sqrt(36);
+    return 0;
+}
+#include <math.h> works fine here, and in modern C++ you can also use #include <cmath> (with std::sqrt(36)).
+
+Namespace and cout<<"hello"; 
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+// function
+int main() {
+    cout << "Hello";
+    return 0;
+}
+Quick Note
+using namespace std; brings standard names like cout, cin, and endl into scope so you can omit std::.
+Keeping std::cout is also completely valid—it just explicitly specifies the std namespace.
+
+Data type in cpp:
+(a) Numbers 
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+// function
+int main() {
+    // 1. Standard 'long' (typically 32-bit on Windows/64-bit on Linux/macOS)
+    long a = 100000L;
+
+    // 2. 'long long' for very large integers (typically 64-bit)
+    long long b = 4357834976876789LL;
+
+    // 3. Unsigned versions (only non-negative values, doubles the positive max)
+    unsigned long c = 4000000000UL;
+    unsigned long long d = 18446744073709551615ULL;
+
+    // 4. Using 'auto' with suffixes to deduce the type automatically
+    auto e = 5000000000LL; // deduced as long long
+
+    cout << "long: " << a << endl;
+    cout << "long long: " << b << endl;
+    cout << "unsigned long: " << c << endl;
+    cout << "unsigned long long: " << d << endl;
+    cout << "auto long long: " << e << endl;
+
+    return 0;
+}
+
+(b)Words
+#include <iostream>
+#include <math.h>
+#include <string>
+using namespace std;
+
+// function
+int main() {
+    // 1. Single character using char (single quotes)
+    char grade = 'A';
+
+    // 2. Words and sentences using string (double quotes)
+    string firstName = "Nandy";
+    string sentence = "Welcome to C++ programming!";
+
+    // 3. Combining (concatenating) strings
+    string greeting = "Hello, " + firstName + ". " + sentence;
+
+    cout << "Grade: " << grade << endl;
+    cout << "First Name: " << firstName << endl;
+    cout << "Sentence: " << sentence << endl;
+    cout << "Combined: " << greeting << endl;
+
+    // 4. Reading a full sentence (including spaces) from user input
+    // string fullLine;
+    // cout << "Enter a full sentence: ";
+    // getline(cin, fullLine);
+    // cout << "You typed: " << fullLine << endl;
+
+    return 0;
+}
+
+Remainder!
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+//function
+int main() {
+    // int, long, long long
+    // float , double
+    // char, string
+    int operat = 54;
+    char letter = 'h';
+    string name = "stella";
+    cout << operat % 10;
+    return 0;
+}
+
